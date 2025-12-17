@@ -17,7 +17,7 @@ public class Ejemplo05 {
     public static void main(String[] args) {
         // Creación de arreglo bidimensionales
         
-        int[][] arreglo1 = {{10, 41, 40}, {1, 2, 3}};
+        int[][] arreglo1 = {{10, 42, 40}, {1, 2, 3}};
         /*
         10      41      40
         1       2       3
@@ -27,7 +27,7 @@ public class Ejemplo05 {
         for (int fila = 0; fila < arreglo1.length; fila++) {
             for (int col = 0; col < arreglo1[fila].length; col++) {
                 valor = arreglo1[fila][col]; 
-                if (valor%2==0){
+                if (fila==col){
                     suma = suma + valor;
                 }
                 
